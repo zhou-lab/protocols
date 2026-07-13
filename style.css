@@ -129,8 +129,9 @@ a:hover { text-decoration: underline; }
 .markdown.fold-subheaders .sec-body > :not(h3):not(h4) { display: none; }
 .markdown.fold-subheaders .sec-body > h3 { margin-top: 10px; }
 .markdown.fold-subheaders .sec.reveal .sec-body > * { display: revert; }
-.sec-bm-hint { margin-left: 9px; font-size: .62em; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; vertical-align: middle; white-space: nowrap; }
-.sec-bm-hint[hidden] { display: none; }
+/* lighter-shade hint: a folded section (and its TOC entry) that holds bookmarks */
+.sec.bm-hidden > h2 { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
+.toc li.bm-hidden > a { background: var(--accent-soft); border-radius: 0 6px 6px 0; }
 
 /* ---------- steps: click line to bookmark (multiple) ---------- */
 .step { display: grid; grid-template-columns: 20px 1fr; align-items: start; gap: 4px; margin: 1px -10px; padding: 3px 10px; border-radius: 8px; cursor: pointer; transition: background .12s; }
