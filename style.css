@@ -142,9 +142,7 @@ a:hover { text-decoration: underline; }
 .step.bm .bm-flag { opacity: 1; color: var(--accent); }
 .step-body p { margin: 0; }
 .step-no { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; margin-right: 4px; }
-.step-reagents { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 5px; margin: 1px 0 7px 20px; font-size: 11.5px; }
-.rx-label { text-transform: uppercase; letter-spacing: .05em; font-size: 10px; font-weight: 700; color: var(--accent); background: var(--accent-soft); padding: 2px 7px; border-radius: 5px; }
-.rx { color: var(--fg-soft); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 5px; padding: 2px 8px; }
+.step-reagents { margin: 1px 0 8px 20px; font-size: 11.5px; color: var(--muted); line-height: 1.5; }
 
 /* ---------- resume (cycles bookmarks) ---------- */
 .resume-btn { position: fixed; right: 22px; bottom: 22px; z-index: 25; border: none; border-radius: 999px; padding: 11px 18px; font-weight: 650; font-size: 14px; color: var(--accent-fg); background: var(--accent); box-shadow: var(--shadow-md); cursor: pointer; }
