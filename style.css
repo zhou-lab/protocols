@@ -128,11 +128,9 @@ a:hover { text-decoration: underline; }
 .sec > h2::after { content: "\25BE"; position: absolute; right: 2px; top: .06em; color: var(--muted); font-size: .72em; transition: transform .15s; }
 .sec.collapsed > h2::after { transform: rotate(-90deg); }
 .sec.collapsed > .sec-body { display: none; }
-/* in Headings view, show unrevealed sections with a collapsed-looking caret */
-.markdown.fold-subheaders .sec:not(.reveal) > h2::after { transform: rotate(-90deg); }
-.markdown.fold-subheaders .sec-body > :not(h3):not(h4) { display: none; }
-.markdown.fold-subheaders .sec-body > h3 { margin-top: 10px; }
-.markdown.fold-subheaders .sec.reveal .sec-body > * { display: revert; }
+/* CHILDREN state (Org-style): show only subheadings, hide their content */
+.sec.children > .sec-body > :not(h3):not(h4) { display: none; }
+.sec.children > .sec-body > h3 { margin-top: 10px; }
 /* lighter-shade hint: a folded section (and its TOC entry) that holds bookmarks */
 .sec.bm-hidden > h2 { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
 .toc li.bm-hidden > a { background: var(--accent-soft); border-radius: 0 6px 6px 0; }
