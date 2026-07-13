@@ -101,6 +101,8 @@ a:hover { text-decoration: underline; }
 .markdown h2 { font-size: 1.18rem; font-weight: 680; letter-spacing: -0.01em; margin: 0 0 8px; padding-bottom: 5px; border-bottom: 1px solid var(--border); }
 .markdown h3 { font-size: 1.04rem; font-weight: 650; margin: 15px 0 5px; }
 .markdown h4 { font-size: .95rem; font-weight: 650; margin: 11px 0 3px; }
+.time { float: right; font-family: var(--mono); font-size: .64em; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px; margin-left: 12px; }
+.sec > h2 .time { margin-right: 20px; }
 .markdown p { margin: 6px 0; overflow-wrap: break-word; }
 .markdown ul, .markdown ol { margin: 6px 0; padding-left: 22px; }
 .markdown li { margin: 1px 0; overflow-wrap: break-word; }
@@ -126,6 +128,8 @@ a:hover { text-decoration: underline; }
 .sec > h2::after { content: "\25BE"; position: absolute; right: 2px; top: .06em; color: var(--muted); font-size: .72em; transition: transform .15s; }
 .sec.collapsed > h2::after { transform: rotate(-90deg); }
 .sec.collapsed > .sec-body { display: none; }
+/* in Headings view, show unrevealed sections with a collapsed-looking caret */
+.markdown.fold-subheaders .sec:not(.reveal) > h2::after { transform: rotate(-90deg); }
 .markdown.fold-subheaders .sec-body > :not(h3):not(h4) { display: none; }
 .markdown.fold-subheaders .sec-body > h3 { margin-top: 10px; }
 .markdown.fold-subheaders .sec.reveal .sec-body > * { display: revert; }
