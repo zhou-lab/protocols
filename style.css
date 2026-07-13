@@ -48,6 +48,12 @@ a:hover { text-decoration: underline; }
 .chip-btn { height: 34px; padding: 0 13px; border: 1px solid var(--border); background: var(--bg-soft); color: var(--fg); border-radius: 9px; font-size: 13px; font-weight: 600; cursor: pointer; transition: border-color .15s, color .15s; }
 .chip-btn:hover { border-color: var(--accent); color: var(--accent); }
 .day-chip { height: 26px; display: inline-flex; align-items: center; padding: 0 11px; border-radius: 999px; font-size: 12px; font-weight: 650; color: var(--accent); background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+.segmented { display: inline-flex; border: 1px solid var(--border); border-radius: 9px; overflow: hidden; background: var(--bg-soft); }
+.segmented[hidden] { display: none; }
+.segmented button { border: none; background: transparent; color: var(--fg-soft); font-size: 12.5px; font-weight: 600; padding: 0 11px; height: 34px; cursor: pointer; border-right: 1px solid var(--border); }
+.segmented button:last-child { border-right: none; }
+.segmented button:hover { color: var(--fg); }
+.segmented button.active { background: var(--accent); color: var(--accent-fg); }
 
 .proto-tabs { display: flex; align-items: center; gap: 2px; min-width: 0; overflow: hidden; }
 .proto-tab { padding: 6px 9px; border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--fg-soft); white-space: nowrap; }
@@ -159,6 +165,7 @@ a:hover { text-decoration: underline; }
 /* ---------- mobile ---------- */
 .scrim { display: none; }
 @media (max-width: 1000px) { .proto-tabs { display: none; } .proto-menu { display: block; } }
+@media (max-width: 640px) { .segmented, .day-chip { display: none; } }
 @media (max-width: 800px) {
   .layout { grid-template-columns: 1fr; }
   .content { padding: 22px 18px 96px; }
