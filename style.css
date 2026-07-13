@@ -75,8 +75,8 @@ a:hover { text-decoration: underline; }
 
 /* ---------- sidebar: On this page ---------- */
 .nav-head { display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 2px 8px 10px; }
-.mini-btn { border: none; background: transparent; color: var(--muted); cursor: pointer; font-size: 12px; padding: 2px 5px; border-radius: 5px; }
-.mini-btn:hover { color: var(--fg); background: var(--bg-soft); }
+.mini-btn { border: 1px solid var(--border); background: var(--bg-soft); color: var(--fg-soft); cursor: pointer; font-size: 11px; font-weight: 600; letter-spacing: .02em; text-transform: none; padding: 2px 8px; border-radius: 6px; }
+.mini-btn:hover { color: var(--accent); border-color: var(--accent); }
 .toc ul { list-style: none; margin: 0; padding: 0; }
 .toc ul ul { padding-left: 12px; }
 .toc li { margin: 1px 0; position: relative; }
@@ -120,6 +120,8 @@ a:hover { text-decoration: underline; }
 .sec > h2::after { content: "\25BE"; position: absolute; right: 2px; top: .06em; color: var(--muted); font-size: .72em; transition: transform .15s; }
 .sec.collapsed > h2::after { transform: rotate(-90deg); }
 .sec.collapsed > .sec-body { display: none; }
+.markdown.fold-subheaders .sec-body > :not(h3):not(h4) { display: none; }
+.markdown.fold-subheaders .sec-body > h3 { margin-top: 10px; }
 
 /* ---------- steps: click line to bookmark (multiple) ---------- */
 .step { display: grid; grid-template-columns: 20px 1fr; align-items: start; gap: 4px; margin: 1px -10px; padding: 3px 10px; border-radius: 8px; cursor: pointer; transition: background .12s; }
