@@ -105,10 +105,10 @@ a:hover { text-decoration: underline; }
 .markdown h2 { font-size: 1.34rem; font-weight: 710; letter-spacing: -0.02em; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--border-strong); }
 .markdown h3 { font-size: 1.02rem; font-weight: 680; margin: 0 0 5px; color: var(--accent); }
 .markdown h4 { font-size: .92rem; font-weight: 650; margin: 0 0 3px; color: var(--fg-soft); }
-.head-steps { float: right; font-family: var(--mono); font-weight: 600; font-size: .6em; color: var(--muted); letter-spacing: -.02em; margin: .4em 0 0 12px; }
-.sec > :is(h1, h2, h3, h4):not(:has(.time)) .head-steps { margin-right: 22px; }  /* clear the fold caret when there is no time badge */
+.head-steps { float: right; font-family: var(--mono); font-weight: 600; font-size: .6em; color: var(--muted); letter-spacing: -.02em; margin: .4em 22px 0 12px; }  /* far right, clearing the fold caret */
 .time { float: right; font-family: var(--mono); font-size: .64em; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px; margin-left: 12px; }
-.sec > :is(h1, h2, h3, h4) .time { margin-right: 20px; }
+/* on a heading, the time badge sits inline right after the text (steps keep their float-right time) */
+.sec > :is(h1, h2, h3, h4) .time { float: none; display: inline-block; margin: 0 0 0 10px; vertical-align: middle; }
 .markdown p { margin: 5px 0; overflow-wrap: break-word; }
 .markdown ul, .markdown ol { margin: 6px 0; padding-left: 22px; }
 .markdown li { margin: 1px 0; overflow-wrap: break-word; }
