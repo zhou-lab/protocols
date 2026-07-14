@@ -5,6 +5,7 @@
   --muted: #7a828c; --border: #e6e8ec; --border-strong: #d3d7dd;
   --accent: #4f46e5; --accent-fg: #ffffff; --accent-soft: #eef0ff;
   --buffer: #0e7c74; --buffer-soft: #e3f7f3;
+  --order: #b45309; --order-soft: #fdf1e0;
   --code-bg: #f4f5f8; --code-fg: #383d45; --table-head: #f4f5f8;
   --shadow-sm: 0 1px 2px rgba(20,24,33,.06); --shadow-md: 0 6px 24px rgba(20,24,33,.12); --shadow-lg: 0 20px 50px rgba(20,24,33,.18);
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -16,6 +17,7 @@
   --bg:#0b0d10; --bg-soft:#121519; --fg:#e8eaed; --fg-soft:#b3b9c2; --muted:#8a919c;
   --border:#23272e; --border-strong:#30353d; --accent:#7c83ff; --accent-fg:#0b0d10; --accent-soft:#191b2e;
   --buffer:#2dd4bf; --buffer-soft:#10241f;
+  --order:#f5b301; --order-soft:#251c09;
   --code-bg:#14171c; --code-fg:#cbd1da; --table-head:#14171c;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow-md:0 6px 24px rgba(0,0,0,.5); --shadow-lg:0 20px 50px rgba(0,0,0,.6);
   color-scheme: dark;
@@ -24,6 +26,7 @@
   --bg:#0b0d10; --bg-soft:#121519; --fg:#e8eaed; --fg-soft:#b3b9c2; --muted:#8a919c;
   --border:#23272e; --border-strong:#30353d; --accent:#7c83ff; --accent-fg:#0b0d10; --accent-soft:#191b2e;
   --buffer:#2dd4bf; --buffer-soft:#10241f;
+  --order:#f5b301; --order-soft:#251c09;
   --code-bg:#14171c; --code-fg:#cbd1da; --table-head:#14171c;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4); --shadow-md:0 6px 24px rgba(0,0,0,.5); --shadow-lg:0 20px 50px rgba(0,0,0,.6);
   color-scheme: dark;
@@ -172,7 +175,8 @@ a:hover { text-decoration: underline; }
 .step.bm .bm-flag { opacity: 1; color: var(--accent); }
 .step-body p { margin: 0; }
 .step-no { font-family: var(--mono); font-size: .82em; font-weight: 700; color: var(--accent); letter-spacing: -.02em; margin-right: 5px; }
-.step-reagents { margin: 1px 0 8px 20px; font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+.step-order { margin: 3px 0 9px 20px; padding: 4px 10px; font-size: 11.5px; line-height: 1.5; color: var(--fg-soft); background: var(--order-soft); border-left: 3px solid var(--order); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.order-tag { color: var(--order); font-weight: 700; font-size: .82em; text-transform: uppercase; letter-spacing: .05em; margin-right: 7px; }
 
 /* ---------- resume (cycles bookmarks) ---------- */
 .resume-btn { position: fixed; right: 22px; bottom: 22px; z-index: 25; border: none; border-radius: 999px; padding: 11px 18px; font-weight: 650; font-size: 14px; color: var(--accent-fg); background: var(--accent); box-shadow: var(--shadow-md); cursor: pointer; }
