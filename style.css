@@ -165,7 +165,7 @@ a:hover { text-decoration: underline; }
 .step:hover .bm-flag { opacity: .4; }
 .step.bm .bm-flag { opacity: 1; color: var(--accent); }
 .step-body p { margin: 0; }
-.step-no { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; margin-right: 4px; }
+.step-no { font-family: var(--mono); font-size: .82em; font-weight: 700; color: var(--accent); letter-spacing: -.02em; margin-right: 5px; }
 .step-reagents { margin: 1px 0 8px 20px; font-size: 11.5px; color: var(--muted); line-height: 1.5; }
 
 /* ---------- resume (cycles bookmarks) ---------- */
