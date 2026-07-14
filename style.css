@@ -102,7 +102,7 @@ a:hover { text-decoration: underline; }
 .markdown h3 { font-size: 1.04rem; font-weight: 650; margin: 15px 0 5px; }
 .markdown h4 { font-size: .95rem; font-weight: 650; margin: 11px 0 3px; }
 .time { float: right; font-family: var(--mono); font-size: .64em; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px; margin-left: 12px; }
-.sec > :is(h2, h3, h4) .time { margin-right: 20px; }
+.sec > :is(h1, h2, h3, h4) .time { margin-right: 20px; }
 .markdown p { margin: 6px 0; overflow-wrap: break-word; }
 .markdown ul, .markdown ol { margin: 6px 0; padding-left: 22px; }
 .markdown li { margin: 1px 0; overflow-wrap: break-word; }
@@ -125,15 +125,15 @@ a:hover { text-decoration: underline; }
 .sec { margin: 16px 0 0; }
 .sec:first-of-type { margin-top: 14px; }
 .sec .sec { margin: 10px 0 0; }
-.sec > :is(h2, h3, h4) { margin-top: 0; cursor: pointer; position: relative; padding-right: 22px; user-select: none; }
-.sec > :is(h2, h3, h4)::after { content: "\25BE"; position: absolute; right: 2px; top: .18em; color: var(--muted); font-size: .68em; transition: transform .15s; }
-.sec.collapsed > :is(h2, h3, h4)::after { transform: rotate(-90deg); }
+.sec > :is(h1, h2, h3, h4) { margin-top: 0; cursor: pointer; position: relative; padding-right: 22px; user-select: none; }
+.sec > :is(h1, h2, h3, h4)::after { content: "\25BE"; position: absolute; right: 2px; top: .18em; color: var(--muted); font-size: .68em; transition: transform .15s; }
+.sec.collapsed > :is(h1, h2, h3, h4)::after { transform: rotate(-90deg); }
 .sec.collapsed > .sec-body { display: none; }
 /* CHILDREN state (Org-style): hide the section's own direct content; child sections
    are put into their own FOLDED state (see setState) so a click can still expand them. */
 .sec.children > .sec-body > :not(.sec) { display: none; }
 /* lighter-shade hint: a folded section (and its TOC entry) that holds bookmarks */
-.sec.bm-hidden > :is(h2, h3, h4) { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
+.sec.bm-hidden > :is(h1, h2, h3, h4) { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
 .toc li.bm-hidden > a { background: var(--accent-soft); border-radius: 0 6px 6px 0; }
 
 /* ---------- steps: click line to bookmark (multiple) ---------- */
