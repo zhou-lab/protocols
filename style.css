@@ -91,9 +91,10 @@ a:hover { text-decoration: underline; }
 .toc a { color: var(--muted); display: block; padding: 4px 10px 4px 12px; border-left: 2px solid var(--border); transition: color .12s, border-color .12s; }
 .toc a:hover { color: var(--fg); text-decoration: none; }
 .toc a.active { color: var(--accent); border-left-color: var(--accent); font-weight: 500; }
-.toc li.has-sub > a { padding-left: 22px; }
-.toc-caret { position: absolute; left: 5px; top: 3px; width: 15px; height: 18px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--muted); user-select: none; }
-.toc-caret::before { content: "\25BE"; font-size: .65em; transition: transform .15s; }
+.toc li.has-caret > a { padding-left: 27px; }
+.toc-caret { position: absolute; left: 0; top: 2px; width: 24px; height: 23px; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; color: var(--muted); user-select: none; border-radius: 6px; }
+.toc-caret:hover { color: var(--fg); background: var(--bg-soft); }
+.toc-caret::before { content: "\25BE"; font-size: .86em; transition: transform .15s; }
 .toc li.collapsed > .toc-caret::before { transform: rotate(-90deg); }
 .toc li.collapsed > ul { display: none; }
 
