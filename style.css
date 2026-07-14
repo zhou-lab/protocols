@@ -133,7 +133,7 @@ a:hover { text-decoration: underline; }
    are put into their own FOLDED state (see setState) so a click can still expand them. */
 .sec.children > .sec-body > :not(.sec) { display: none; }
 /* lighter-shade hint: a folded section (and its TOC entry) that holds bookmarks */
-.sec.bm-hidden > h2 { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
+.sec.bm-hidden > :is(h2, h3, h4) { background: var(--accent-soft); border-radius: 7px; padding-left: 9px; margin-left: -9px; }
 .toc li.bm-hidden > a { background: var(--accent-soft); border-radius: 0 6px 6px 0; }
 
 /* ---------- steps: click line to bookmark (multiple) ---------- */
