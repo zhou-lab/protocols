@@ -147,6 +147,11 @@ a:hover { text-decoration: underline; }
 .why pre { font-style: normal; margin: 9px 0 2px; font-size: .8em; background: var(--bg); }
 
 /* ---------- foldable sections ---------- */
+/* group eyebrow — small uppercase kicker above the first phase of a group */
+.group-eyebrow { text-transform: uppercase; letter-spacing: .11em; font-size: .7rem; font-weight: 750; color: var(--accent); margin: 34px 0 -4px; }
+.group-eyebrow:first-child { margin-top: 6px; }
+.group-note { text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--muted); }
+
 .sec { margin: 16px 0 0; }
 .sec:has(> h1) { margin-top: 13px; }
 .sec:has(> h2) { margin-top: 11px; }
