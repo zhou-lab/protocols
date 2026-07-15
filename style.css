@@ -111,7 +111,7 @@ a:hover { text-decoration: underline; }
 .head-steps { font-family: var(--mono); font-weight: 600; font-size: .62em; color: var(--muted); letter-spacing: -.02em; margin-right: 8px; }  /* at the start of the heading line */
 .time { float: right; font-family: var(--mono); font-size: .64em; font-weight: 600; color: var(--muted); background: var(--bg-soft); border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px; margin-left: 12px; }
 /* on a heading, the time badge sits inline right after the text (steps keep their float-right time) */
-.sec > :is(h1, h2, h3, h4) .time { float: none; display: inline-block; margin: 0 0 0 10px; vertical-align: middle; }
+.sec > :is(h1, h2, h3, h4) .time { margin: 4px 0 0 10px; }  /* keep float:right → right-aligned on the heading line */
 .markdown p { margin: 4px 0; overflow-wrap: break-word; }
 .markdown ul, .markdown ol { margin: 6px 0; padding-left: 22px; }
 .markdown li { margin: 1px 0; overflow-wrap: break-word; }
@@ -147,10 +147,8 @@ a:hover { text-decoration: underline; }
 .why pre { font-style: normal; margin: 9px 0 2px; font-size: .8em; background: var(--bg); }
 
 /* ---------- foldable sections ---------- */
-/* group eyebrow — small uppercase kicker above the first phase of a group */
-.group-eyebrow { text-transform: uppercase; letter-spacing: .11em; font-size: .7rem; font-weight: 750; color: var(--accent); margin: 34px 0 -4px; }
-.group-eyebrow:first-child { margin-top: 6px; }
-.group-note { text-transform: none; letter-spacing: 0; font-weight: 500; color: var(--muted); }
+/* group heading — styled like an H1 but carries no step number (a stage divider) */
+.group-head { font-size: 1.28rem; font-weight: 750; letter-spacing: -0.02em; line-height: 1.15; color: var(--fg); margin: 30px 0 2px; }
 
 .sec { margin: 16px 0 0; }
 .sec:has(> h1) { margin-top: 13px; }
