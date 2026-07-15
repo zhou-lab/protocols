@@ -182,6 +182,13 @@ a:hover { text-decoration: underline; }
 .step-body p { margin: 0; }
 .step-no { font-family: var(--mono); font-size: .82em; font-weight: 700; color: var(--accent); letter-spacing: -.02em; margin-right: 5px; }
 .step-order { margin: 3px 0 9px 20px; padding: 4px 10px; font-size: 11.5px; line-height: 1.5; color: var(--fg-soft); background: var(--order-soft); border-left: 3px solid var(--order); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+
+/* nav buttons (Order / Buffers) highlight the item they're currently parked on */
+.step-order, .order-card, .recipe { transition: outline-color .15s; }
+.step-order.nav-current, .order-card.nav-current { outline: 2px solid var(--order); outline-offset: 2px; }
+.recipe.nav-current { outline: 2px solid var(--buffer); outline-offset: 2px; }
+@keyframes nav-pop { 0% { outline-width: 5px; } 100% { outline-width: 2px; } }
+.nav-current { animation: nav-pop .28s ease-out; }
 .order-tag { color: var(--order); font-weight: 700; font-size: .82em; text-transform: uppercase; letter-spacing: .05em; margin-right: 7px; }
 .order-card { margin: 4px 0 11px; border: 1px solid var(--order); border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--order-soft); }
 .order-head { padding: 5px 11px; font-size: 12px; line-height: 1.5; color: var(--fg-soft); border-bottom: 1px solid var(--order); }
