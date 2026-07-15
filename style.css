@@ -177,11 +177,13 @@ a:hover { text-decoration: underline; }
 .step-no { font-family: var(--mono); font-size: .82em; font-weight: 700; color: var(--accent); letter-spacing: -.02em; margin-right: 5px; }
 .step-order { margin: 3px 0 9px 20px; padding: 4px 10px; font-size: 11.5px; line-height: 1.5; color: var(--fg-soft); background: var(--order-soft); border-left: 3px solid var(--order); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
 .order-tag { color: var(--order); font-weight: 700; font-size: .82em; text-transform: uppercase; letter-spacing: .05em; margin-right: 7px; }
-.order-card { margin: 4px 0 11px; border: 1px solid var(--order); border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); }
-.order-head { padding: 5px 11px; font-size: 12px; line-height: 1.5; color: var(--fg-soft); background: var(--order-soft); border-bottom: 1px solid var(--order); }
-.order-card .table-wrap { margin: 0; border: none; border-radius: 0; box-shadow: none; }
-.order-card th { background: var(--order-soft); color: var(--order); }
-.order-card tbody tr:hover td { background: color-mix(in srgb, var(--order-soft) 60%, transparent); }
+.order-card { margin: 4px 0 11px; border: 1px solid var(--order); border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--order-soft); }
+.order-head { padding: 5px 11px; font-size: 12px; line-height: 1.5; color: var(--fg-soft); border-bottom: 1px solid var(--order); }
+.order-card .table-wrap { margin: 0; border: none; border-radius: 0; box-shadow: none; background: transparent; }
+.order-card table, .order-card td { background: transparent; }
+.order-card th { background: color-mix(in srgb, var(--order) 15%, var(--order-soft)); color: var(--order); border-bottom-color: var(--order); }
+.order-card td { border-bottom-color: color-mix(in srgb, var(--order) 25%, transparent); }
+.order-card tbody tr:hover td { background: color-mix(in srgb, var(--order) 10%, transparent); }
 
 /* ---------- resume (cycles bookmarks) ---------- */
 .resume-btn { position: fixed; right: 22px; bottom: 22px; z-index: 25; border: none; border-radius: 999px; padding: 11px 18px; font-weight: 650; font-size: 14px; color: var(--accent-fg); background: var(--accent); box-shadow: var(--shadow-md); cursor: pointer; }
