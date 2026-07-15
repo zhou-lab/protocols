@@ -144,6 +144,7 @@ a:hover { text-decoration: underline; }
 /* "Why" rationale note under a big-step heading */
 .why { margin: 10px 0 14px; padding: 9px 13px; border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; background: color-mix(in srgb, var(--accent) 14%, var(--bg-soft)); color: var(--fg-soft); font-size: .95em; font-style: italic; line-height: 1.5; }
 .why-tag { font-style: normal; font-weight: 700; font-size: .72em; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-right: 8px; vertical-align: 1px; }
+.why pre { font-style: normal; margin: 9px 0 2px; font-size: .8em; background: var(--bg); }
 
 /* ---------- foldable sections ---------- */
 .sec { margin: 16px 0 0; }
