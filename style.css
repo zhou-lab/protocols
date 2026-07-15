@@ -135,7 +135,7 @@ a:hover { text-decoration: underline; }
 .recipe-head { padding: 6px 12px; font-size: .84rem; font-weight: 680; letter-spacing: -0.01em; color: var(--buffer); background: var(--buffer-soft); border-bottom: 1px solid var(--buffer); }
 .recipe .table-wrap { margin: 0; border: none; border-radius: 0; box-shadow: none; }
 .recipe th { background: var(--buffer-soft); color: var(--buffer); }
-.recipe-note { padding: 6px 12px; font-size: .8em; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--border); background: var(--bg-soft); }
+.recipe-note { width: 0; min-width: 100%; box-sizing: border-box; padding: 6px 12px; font-size: .8em; line-height: 1.5; color: var(--muted); border-top: 1px solid var(--border); background: var(--bg-soft); }
 .recipe-note strong { color: var(--fg-soft); font-weight: 650; }
 .recipe tbody tr:hover td { background: color-mix(in srgb, var(--buffer-soft) 60%, transparent); }
 /* buffer names, coloured inline in the steps to match their recipe card */
