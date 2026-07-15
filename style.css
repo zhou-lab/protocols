@@ -187,7 +187,7 @@ a:hover { text-decoration: underline; }
 .order-card tbody tr:hover td { background: color-mix(in srgb, var(--order) 10%, transparent); }
 
 /* compact, content-width cards & program tables — don't stretch to full page width */
-.recipe, .order-card, .table-wrap.prog { width: fit-content; max-width: 100%; }
+.recipe, .order-card, .table-wrap.prog { width: fit-content; max-width: 100%; margin-inline: auto; }
 .recipe table, .order-card table, .table-wrap.prog table { width: auto; font-size: .78rem; }
 .recipe th, .recipe td, .order-card th, .order-card td,
 .table-wrap.prog th, .table-wrap.prog td { padding: 3px 9px; }
