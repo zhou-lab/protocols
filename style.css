@@ -193,7 +193,8 @@ a:hover { text-decoration: underline; }
 @keyframes nav-pop { 0% { outline-width: 5px; } 100% { outline-width: 2px; } }
 .nav-current { animation: nav-pop .28s ease-out; }
 .order-tag { color: var(--order); font-weight: 700; font-size: .82em; text-transform: uppercase; letter-spacing: .05em; margin-right: 7px; }
-.order-card { margin: 4px 0 11px; border: 1px solid var(--order); border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--order-soft); }
+.order-card { margin: 4px 0 11px; border: 1px solid var(--order); border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--order-soft); font-family: var(--mono); }
+.order-card .order-tag { font-family: var(--sans); }  /* keep the "Order" label in the UI font */
 .order-head { padding: 5px 11px; font-size: 12px; line-height: 1.5; color: var(--fg-soft); border-bottom: 1px solid var(--order); }
 .order-card .table-wrap { margin: 0; border: none; border-radius: 0; box-shadow: none; background: transparent; }
 .order-card table, .order-card td { background: transparent; }
